@@ -1,0 +1,44 @@
+This is a review of the manuscript Avalur et al, Verifying Newton's Second Law.
+
+The manuscript advertises to test Newton's second law (F=ma) by using a
+one dimensional cart and pulley system to show F= ma. It claims the results
+confirm this relationship
+
+Second abstract: It's unclear why but the ms has a second abstract. The second
+abstract states that the test is performed as a constant F test by hanging a
+100g weight; and that acceleration is to be measured by timing the time to go
+80 cm. The second abstract advertises a "clear correlation between... and an
+inverse relationship betwen..." (though ultimately these last two have no
+supporting statistics). 
+
+Introduction: The introduction is relatively clean. F is held constant while
+m is varied, and the resulting acceleration is observed. Fig 1 shows the setup
+but is very hard to read. Fig 2 shows a diagram of the setup but is also hard to read due to small size and the lack of labels, callouts, or a caption. 
+
+Methods and materials: These are clear. Three replicates of each trial are
+done. F is held constant while m is varied among 7 values. The authors should
+have mentioned the source of specific key gear like the cart and the track,
+these details would be difficult to replicate given the lack of information.
+Rather than deal only with the average times, the authors should have treated
+each as a different measurement of a and included those in their analysis
+at the end.
+
+Results: Data tables are provided here for all trials, and then reduced based
+on average time, hoiwever, no indication of measurement precision is given.
+The authors should tabulate at the very least mean +/- 1 sd for times; or even
+better would be to carry through all a calculations for all 3 replicates
+independently.
+
+What is missing from the results is a graph. There is no graph given
+that shows something like F=ma. 
+
+Discussion: As a result of not having a graph of F=ma, or perhaps a versus
+m, the authors talk around the points they wish to make and only weakly
+make their point.
+
+In addressing sources of experimental error it might be best to identify
+ways to improve on e.g. timing error or release problems. What would
+the team have done differently?
+
+References: Several references are listed but they are never cited
+within the body of the test (most like the introduction or discussion). 

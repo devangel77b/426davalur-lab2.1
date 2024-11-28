@@ -1,0 +1,12 @@
+This is a review of the resubmitted ms "Verifying Newton's second law" by Avalur et al. I recommend minor revisions.
+
+Abstract: If testing at 0g shouldnt' acceleration be infinite?
+
+Methods: equations are given for the mean and standard deviation. These are standard things and need not be repeated here, it would be sufficient to quote measurements as mean +/- 1 s.d. and give the n.
+
+Results: In the main data figure, there is a shift between the data (dots) and the model (curve). Why is there a shift? We checked the numbers on the original submission and it seemed to be right on, so what happened? The figure should be bigger and the text on the figure enlarged to be easier to read.
+
+Discussion: In the section on experimental error, it is impossible to "design" a cart to be frictionless. The team chooses to model it as such; perhaps this assumption could be justified here.
+
+Also, when the team discusses timing inaccuracies with hand-timing using stopwatches, perhaps tehre is existing research on this that could be cited? A quick Google Scholar search appears to show promise in this regard.
+
