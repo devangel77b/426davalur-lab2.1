@@ -1,4 +1,4 @@
-﻿\documentclass[reprint,amsmath,amssymb.aps]{revtex4-2}
+﻿\documentclass[reprint,amsmath,amssymb,aps]{revtex4-2}
 
 
 \usepackage{graphicx}
@@ -52,13 +52,17 @@ The significance of \cref{eq:n2l} lies in its ability to predict how objects wil
 We seek to verify Newton’s second law and hypothesize that as the mass of the cart increases, the acceleration will decrease, consistent with \cref{eq:n2lb}. To test this hypothesis, we conducted multiple trials using a one-dimensional cart system. Known masses were placed on the cart, and a constant force was applied via a \qty{0.1}{\kilo\gram} weight. By comparing the accelerations for different masses, we examined the relationship between mass and acceleration to verify Newton’s second law \cite{knight2017physics}.
 
 \begin{figure}
-\caption{Materials used in lab setup. Display of materials used in the lab experiment: a cart (to carry varying masses), a near-frictionless track (to reduce resistance), a pulley system (to apply a constant force), and masses. These are the necessary materials and components for investigating the relationship between mass, force, and acceleration.}
-\label{fig:materials}
+\begin{center}
+\includegraphics[width=\columnwidth]{Screenshot 2024-11-26 at 11.05.58 PM.png}
+\end{center}
+\caption{\label{fig:materials}Materials used in lab setup. Display of materials used in the lab experiment: a cart (to carry varying masses), a near-frictionless track (to reduce resistance), a pulley system (to apply a constant force), and masses. These are the necessary materials and components for investigating the relationship between mass, force, and acceleration.}
 \end{figure}
 
 \begin{figure}
-\caption{Experimental Setup. A free-body diagram illustrating the experimental setup. The cart ($m_1$) is connected to a hanging mass ($m_2$) through a string, which is hung over a pulley, with forces labeled to represent the tension ($T$), gravitational force ($mg$), and normal force ($N$) acting on the system.}
-\label{fig:fbd}
+\begin{center}
+\includegraphics[width=\columnwidth]{Screenshot 2024-11-26 at 11.06.38 PM.png}
+\end{center}
+\caption{\label{fig:fbd}Experimental Setup. A free-body diagram illustrating the experimental setup. The cart ($m_1$) is connected to a hanging mass ($m_2$) through a string, which is hung over a pulley, with forces labeled to represent the tension ($T$), gravitational force ($mg$), and normal force ($N$) acting on the system.}
 \end{figure}
 
 
@@ -92,14 +96,40 @@ To assess the variability of time measurements across trials, we calculated the 
 
 \Cref{tab:fig3} presents the time measurements for a cart with varying masses, recorded over three trials. For each mass, the times for Trial 1, Trial 2, and Trial 3 are displayed, along with the calculated average time and the standard deviation. 
 \begin{table}
-\caption{Time Measurements for Different Masses, with Trial Times, Average Time (s), and Standard Deviation.}
-\label{tab:fig3}
+\caption{\label{tab:fig3}Time Measurements for Different Masses, with Trial Times, Average Time (s), and Standard Deviation.}
+\begin{center}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+mass, \unit{\kilo\gram} & trial 1, \unit{\second} & trial 2, \unit{\second}, & trial 3, \unit{\second} & mean $\pm$ s.d., \unit{\second} \\
+\colrule
+0.020 & 1.10 & 0.95 & 1.03 & \num{1.03\pm0.06} \\
+0.050 & 1.13 & 1.13 & 1.19 & \num{1.15\pm0.04} \\
+0.100 & 1.21 & 1.16 & 1.16 & \num{1.18\pm0.03} \\
+0.200 & 1.28 & 1.31 & 1.20 & \num{1.26\pm0.06} \\
+0.500 & 1.36 & 1.34 & 1.28 & \num{1.33\pm0.04} \\
+1.000 & 1.90 & 1.58 & 1.56 & \num{1.68\pm0.20} \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
 \end{table}
 
 \Cref{tab:fig4} displays the calculated acceleration for a cart with varying masses, derived independently from each of the three trials. For each mass, the acceleration values from Trial 1, Trial 2, and Trial 3 are shown, alongside the acceleration calculated from the average time, accompanied by the standard deviation. 
 \begin{table}
-\caption{Calculated Acceleration From Each Trial and Average Acceleration with Standard Deviation for Cart with Varying Masses.}
-\label{tab:fig4}
+\caption{\label{tab:fig4}Calculated Acceleration From Each Trial and Average Acceleration with Standard Deviation for Cart with Varying Masses.}
+\begin{center}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+mass, \unit{\kilo\gram} & trial 1, \unit{\meter\per\second\squared} & trial 2, \unit{\meter\per\second\squared}, & trial 3, \unit{\meter\per\second\squared} & mean $\pm$ s.d., \unit{\meter\per\second\squared} \\
+\colrule
+0.020 & 1.32 & 1.77 & 1.51 & \num{1.51\pm0.23} \\
+0.050 & 1.25 & 1.25 & 1.13 & \num{1.21\pm0.07} \\
+0.100 & 1.09 & 1.19 & 1.19 & \num{1.15\pm0.06} \\
+0.200 & 0.98 & 0.93 & 1.11 & \num{1.01\pm0.09} \\
+0.500 & 0.86 & 0.89 & 0.98 & \num{0.90\pm0.06} \\
+1.000 & 0.44 & 0.64 & 0.66 & \num{0.57\pm0.12} \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
 \end{table}
 
 \Cref{fig:5} presents the relationship between acceleration and mass for the cart system under the constant applied force. The plot includes individual data points representing the calculated acceleration for each trial at each mass, without using the averaged accelerations. These data points allow for a detailed view of the variability in acceleration across trials for each mass. Additionally, the theoretical predicted curve, calculated based on the formula  
@@ -109,8 +139,10 @@ a_{pred}(m_1) = \dfrac{m_2 g}{m_1}
 is shown, where $m_2$ is the \qty{0.100}{\kilo\gram} mass providing a constant force, $g=\qty{9.81}{\meter\per\second\squared}$ is the gravitational acceleration, and $m_1$ is the varying mass converted to kg \cite{knight2017physics}. This was depicted prior in \cref{fig:fbd}.
 
 \begin{figure}
-\caption{Graph of Acceleration vs. Mass: Individual Trial Data Points and Predicted Curve Under Constant Force}
-\label{fig:5}
+\begin{center}
+\includegraphics[width=\columnwidth]{Screenshot 2024-11-26 at 11.07.05 PM.png}
+\end{center}
+\caption{\label{fig:5}Graph of Acceleration vs. Mass: Individual Trial Data Points and Predicted Curve Under Constant Force}
 \end{figure}
 
 
@@ -159,6 +191,6 @@ For this experiment, each member of our group contributed to various parts of th
 %[4].Taylor, J. R. (1997). An Introduction to Error Analysis: The …..Study of Uncertainties in Physical Measurements (2nd ed.). ….University Science Books.
 %[5] Hetzler, R. K., Stickley, C. D., Lundquist, K. M., & Kimura, I. …..F. (2008). Reliability and accuracy of handheld stopwatches …..compared with electronic timing in measuring sprint …..performance. Journal of Strength and Conditioning Research, ….22(6), 1969-1976.  https://doi.org/10.1519/JSC.0b013e318185
 %….f36c
-\bibliographystyle{abbrvnat}
+%\bibliographystyle{abbrvnat}
 \bibliography{lab.bib}
 \end{document}
