@@ -1,4 +1,4 @@
-﻿\documentclass[reprint,amsmath,amssymb,aps]{revtex4-2}
+﻿\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2}
 
 
 \usepackage{graphicx}
@@ -13,12 +13,29 @@
 \crefname{figure}{Fig.}{Figs.}
 \crefname{table}{Table}{Tables}
 \usepackage{svg}
+% set PDF metadata
+\hypersetup{%
+pdftitle={Verifying Newton's second law: the relationship between force and acceleration},
+pdfauthor={Dia Avalur, Srilekha Dantu, Jophy Lin, and Anika Tokala},
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,RO]{J S\&E \textbf{1}, 5--7 (2024)}
+\fancyhead[LO]{Avalur et al.}
+\fancyhead[LE]{Verifying Newton's second law}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{mytitlepage}{
+\fancyhf{}
+\fancyhead[C]{Journal of Science \& Engineering \textbf{1}, 5--7 (2024)}
+\fancyfoot[C]{\thepage}
+}
 
 
 
 
 \begin{document}
-
+\setcounter{page}{5}
 \title{Verifying Newton's second law: the relationship between force, mass, and acceleration}
 \author{Dia Avalur}
 \email{Contact author: 426davalur@frhsd.com}
@@ -34,7 +51,7 @@ This experiment investigates the relationship betwen mass, net force, and accele
 
 \keywords{keywords here}
 
-\maketitle
+\maketitle\thispagestyle{mytitlepage}
 
 
 
